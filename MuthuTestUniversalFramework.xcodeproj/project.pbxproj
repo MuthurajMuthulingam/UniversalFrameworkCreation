@@ -6,10 +6,31 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		6625919C1BA7D4D1000834EC /* MuthuTestUniversal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6625919D1BA7D4D1000834EC /* Build configuration list for PBXAggregateTarget "MuthuTestUniversal" */;
+			buildPhases = (
+				662591A01BA7D4F1000834EC /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = MuthuTestUniversal;
+			productName = MuthuTestUniversal;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		662591861BA7D451000834EC /* MuthuTestUniversalFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 662591851BA7D451000834EC /* MuthuTestUniversalFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6625918C1BA7D451000834EC /* MuthuTestUniversalFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662591801BA7D451000834EC /* MuthuTestUniversalFramework.framework */; };
 		662591931BA7D452000834EC /* MuthuTestUniversalFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 662591921BA7D452000834EC /* MuthuTestUniversalFrameworkTests.m */; };
+		662591A71BA7DA95000834EC /* DataOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 662591A31BA7DA95000834EC /* DataOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		662591A81BA7DA95000834EC /* DataOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 662591A41BA7DA95000834EC /* DataOperation.m */; };
+		662591A91BA7DA95000834EC /* DataStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 662591A51BA7DA95000834EC /* DataStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		662591AA1BA7DA95000834EC /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 662591A61BA7DA95000834EC /* DataStore.m */; };
+		662591AD1BA7DABB000834EC /* ServiceHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 662591AB1BA7DABB000834EC /* ServiceHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		662591AE1BA7DABB000834EC /* ServiceHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 662591AC1BA7DABB000834EC /* ServiceHandler.m */; };
+		662591B41BA7DDE1000834EC /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 662591B31BA7DDE1000834EC /* libsqlite3.0.dylib */; };
+		662591F11BA7DFEC000834EC /* MuthuTestUniversalFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 662591F01BA7DFEC000834EC /* MuthuTestUniversalFramework.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,10 +46,17 @@
 /* Begin PBXFileReference section */
 		662591801BA7D451000834EC /* MuthuTestUniversalFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MuthuTestUniversalFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		662591841BA7D451000834EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		662591851BA7D451000834EC /* MuthuTestUniversalFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MuthuTestUniversalFramework.h; sourceTree = "<group>"; };
 		6625918B1BA7D451000834EC /* MuthuTestUniversalFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuthuTestUniversalFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		662591911BA7D452000834EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		662591921BA7D452000834EC /* MuthuTestUniversalFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MuthuTestUniversalFrameworkTests.m; sourceTree = "<group>"; };
+		662591A31BA7DA95000834EC /* DataOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataOperation.h; path = DataOperation/DataOperation.h; sourceTree = "<group>"; };
+		662591A41BA7DA95000834EC /* DataOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataOperation.m; path = DataOperation/DataOperation.m; sourceTree = "<group>"; };
+		662591A51BA7DA95000834EC /* DataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataStore.h; path = DataOperation/DataStore.h; sourceTree = "<group>"; };
+		662591A61BA7DA95000834EC /* DataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataStore.m; path = DataOperation/DataStore.m; sourceTree = "<group>"; };
+		662591AB1BA7DABB000834EC /* ServiceHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServiceHandler.h; path = ServiceHandler/ServiceHandler.h; sourceTree = "<group>"; };
+		662591AC1BA7DABB000834EC /* ServiceHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServiceHandler.m; path = ServiceHandler/ServiceHandler.m; sourceTree = "<group>"; };
+		662591B31BA7DDE1000834EC /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		662591F01BA7DFEC000834EC /* MuthuTestUniversalFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MuthuTestUniversalFramework.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				662591B41BA7DDE1000834EC /* libsqlite3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,7 +100,10 @@
 		662591821BA7D451000834EC /* MuthuTestUniversalFramework */ = {
 			isa = PBXGroup;
 			children = (
-				662591851BA7D451000834EC /* MuthuTestUniversalFramework.h */,
+				662591F01BA7DFEC000834EC /* MuthuTestUniversalFramework.h */,
+				662591B51BA7DDEE000834EC /* Frameworks */,
+				662591A21BA7DA7A000834EC /* ServiceHandler */,
+				662591A11BA7DA72000834EC /* DataOperation */,
 				662591831BA7D451000834EC /* Supporting Files */,
 			);
 			path = MuthuTestUniversalFramework;
@@ -102,6 +134,66 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		662591A11BA7DA72000834EC /* DataOperation */ = {
+			isa = PBXGroup;
+			children = (
+				662591B21BA7DD2E000834EC /* Header */,
+				662591B11BA7DD27000834EC /* Source */,
+			);
+			name = DataOperation;
+			sourceTree = "<group>";
+		};
+		662591A21BA7DA7A000834EC /* ServiceHandler */ = {
+			isa = PBXGroup;
+			children = (
+				662591B01BA7DCFE000834EC /* Header */,
+				662591AF1BA7DCF7000834EC /* Source */,
+			);
+			name = ServiceHandler;
+			sourceTree = "<group>";
+		};
+		662591AF1BA7DCF7000834EC /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				662591AC1BA7DABB000834EC /* ServiceHandler.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		662591B01BA7DCFE000834EC /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				662591AB1BA7DABB000834EC /* ServiceHandler.h */,
+			);
+			name = Header;
+			sourceTree = "<group>";
+		};
+		662591B11BA7DD27000834EC /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				662591A41BA7DA95000834EC /* DataOperation.m */,
+				662591A61BA7DA95000834EC /* DataStore.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		662591B21BA7DD2E000834EC /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				662591A31BA7DA95000834EC /* DataOperation.h */,
+				662591A51BA7DA95000834EC /* DataStore.h */,
+			);
+			name = Header;
+			sourceTree = "<group>";
+		};
+		662591B51BA7DDEE000834EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				662591B31BA7DDE1000834EC /* libsqlite3.0.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -109,7 +201,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				662591861BA7D451000834EC /* MuthuTestUniversalFramework.h in Headers */,
+				662591A71BA7DA95000834EC /* DataOperation.h in Headers */,
+				662591F11BA7DFEC000834EC /* MuthuTestUniversalFramework.h in Headers */,
+				662591AD1BA7DABB000834EC /* ServiceHandler.h in Headers */,
+				662591A91BA7DA95000834EC /* DataStore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +262,9 @@
 					6625918A1BA7D451000834EC = {
 						CreatedOnToolsVersion = 6.4;
 					};
+					6625919C1BA7D4D1000834EC = {
+						CreatedOnToolsVersion = 6.4;
+					};
 				};
 			};
 			buildConfigurationList = 6625917A1BA7D451000834EC /* Build configuration list for PBXProject "MuthuTestUniversalFramework" */;
@@ -183,6 +281,7 @@
 			targets = (
 				6625917F1BA7D451000834EC /* MuthuTestUniversalFramework */,
 				6625918A1BA7D451000834EC /* MuthuTestUniversalFrameworkTests */,
+				6625919C1BA7D4D1000834EC /* MuthuTestUniversal */,
 			);
 		};
 /* End PBXProject section */
@@ -204,11 +303,30 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		662591A01BA7D4F1000834EC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "######################\n# Options\n######################\n\nREVEAL_ARCHIVE_IN_FINDER=false\n\nFRAMEWORK_NAME=\"${PROJECT_NAME}\"\n\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework\"\n\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework\"\n\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\"\n\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${FRAMEWORK_NAME}.framework\"\n\n\n######################\n# Build Frameworks - Project\n######################\n\nxcodebuild ${PROJECT_NAME}.xcodeproj -scheme ${PROJECT_NAME} -sdk iphonesimulator -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator 2>&1\n\nxcodebuild ${PROJECT_NAME}.xcodeproj -scheme ${PROJECT_NAME} -sdk iphoneos -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos 2>&1\n\n######################\n# Create directory for universal\n######################\n\nrm -rf \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${UNIVERSAL_LIBRARY_DIR}\"\n\nmkdir \"${FRAMEWORK}\"\n\n\n######################\n# Copy files Framework\n######################\n\ncp -r \"${DEVICE_LIBRARY_PATH}/.\" \"${FRAMEWORK}\"\n\n\n######################\n# Make an universal binary\n######################\n\nlipo \"${SIMULATOR_LIBRARY_PATH}/${FRAMEWORK_NAME}\" \"${DEVICE_LIBRARY_PATH}/${FRAMEWORK_NAME}\" -create -output \"${FRAMEWORK}/${FRAMEWORK_NAME}\" | echo\n\n# For Swift framework, Swiftmodule needs to be copied in the universal framework\nif [ -d \"${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\ncp -f ${SIMULATOR_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule\n/* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\n fi\n \n if [ -d \"${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" ]; then\n cp -f ${DEVICE_LIBRARY_PATH}/Modules/${FRAMEWORK_NAME}.swiftmodule/* \"${FRAMEWORK}/Modules/${FRAMEWORK_NAME}.swiftmodule/\" | echo\n fi\n \n ######################\n # On Release, copy the result to release directory\n ######################\n OUTPUT_DIR=\"${PROJECT_DIR}/Output/${FRAMEWORK_NAME}-${CONFIGURATION}-iphoneuniversal/\"\n \n rm -rf \"$OUTPUT_DIR\"\n mkdir -p \"$OUTPUT_DIR\"\n \n cp -r \"${FRAMEWORK}\" \"$OUTPUT_DIR\"\n \n if [ ${REVEAL_ARCHIVE_IN_FINDER} = true ]; then\n open \"${OUTPUT_DIR}/\"\n fi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6625917B1BA7D451000834EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				662591AE1BA7DABB000834EC /* ServiceHandler.m in Sources */,
+				662591A81BA7DA95000834EC /* DataOperation.m in Sources */,
+				662591AA1BA7DA95000834EC /* DataStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,9 +446,13 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = MuthuTestUniversalFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -343,9 +465,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = MuthuTestUniversalFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -379,6 +504,20 @@
 			};
 			name = Release;
 		};
+		6625919E1BA7D4D1000834EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6625919F1BA7D4D1000834EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -404,6 +543,14 @@
 			buildConfigurations = (
 				6625919A1BA7D452000834EC /* Debug */,
 				6625919B1BA7D452000834EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6625919D1BA7D4D1000834EC /* Build configuration list for PBXAggregateTarget "MuthuTestUniversal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6625919E1BA7D4D1000834EC /* Debug */,
+				6625919F1BA7D4D1000834EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

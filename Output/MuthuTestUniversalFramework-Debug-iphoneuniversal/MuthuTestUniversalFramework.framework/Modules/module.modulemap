@@ -1,0 +1,6 @@
+framework module MuthuTestUniversalFramework {
+  umbrella header "MuthuTestUniversalFramework.h"
+
+  export *
+  module * { export * }
+}
